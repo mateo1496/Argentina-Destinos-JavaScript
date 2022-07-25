@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* Index */
+body {
+  background: linear-gradient(#33DFFA, #33B4DB, #4196F0, #3B65FF, #4636FF);
+  box-sizing: border-box; }
+
+.header {
+  background-color: rgba(16, 44, 128, 0.678);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px; }
+  .header .nav-link {
+    font-family: 'Federo', sans-serif;
+    font-family: 'Girassol', cursive;
+    color: black;
+    margin-top: 10px;
+    font-size: 20px; }
+    .header .nav-link:hover {
+      background-color: lightblue;
+      cursor: pointer; }
+  .header .lista {
+    margin-top: 10%; }
+
+.tituloIndex {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Girassol', cursive; }
+
+.visitados {
+  font-family: 'Girassol', cursive;
+  font-size: 40px;
+  padding: 10px;
+  margin: auto; }
+
+.barraBusqueda {
+  margin-top: 10px;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 10px;
+  font-family: 'Girassol', cursive;
+  padding-left: 10%; }
+  .barraBusqueda .facebook {
+    padding-left: 2px; }
+  .barraBusqueda .instagram {
+    padding-left: 2px; }
+  .buttonBusqueda .barraBusqueda:hover {
+    cursor: pointer;
+    background-color: cornflowerblue; }
+
+/*.mainIndex{
+        background-image: url(../assets/Imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: padding 50px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }*/
+.destinos {
+  cursor: pointer; }
+
+.calafateCard {
+  padding-left: 6%; }
+
+.cataratas {
+  margin: auto; }
+
+.cataratasCard {
+  padding-left: 1px; }
+
+.sanRafael {
+  padding-left: 6%; }
+
+.footer {
+  background-color: rgba(1, 6, 19, 0.678);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Girassol" cursive;
+  color: white;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  text-align: center;
+  border: 2px solid black; }
+
+.contactanos {
+  padding-left: 5%; }
+
+.redesSociales {
+  padding-right: 6%; }
+
+/* Contacto */
+.contactoTexto {
+  font-weight: bold;
+  font-family: 'Girassol', cursive; }
+
+.formulario {
+  margin: auto;
+  background-image: radial-gradient(circle at 95.45% -4.17%, #dbb2ff 0, #b99df2 50%, #9988d1 100%);
+  width: 40%;
+  align-items: center;
+  text-align: center; }
+
+.elementosFormulario {
+  width: 50%;
+  margin: auto; }
+
+.bottonContacto {
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: black; }
+  .bottonContacto .bottonContacto:hover {
+    background-color: blue; }
+
+/* Recomendaciones */
+.textoRecomendaciones {
+  font-size: 25px;
+  margin-bottom: 20px; }
+
+.navRecomendaciones {
+  width: 40%;
+  padding: 5px;
+  color: black;
+  margin: auto;
+  font-size: 20px; }
+
+/* Ofertas */
+h1 {
+  font-size: 40px;
+  box-shadow: cornflowerblue;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-family: 'Girassol', cursive;
+  margin: auto; }
+
+p {
+  font-size: 20px; }
+
+.textoOfertas {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: mTop; }
+
+.formularioOfertas {
+  margin: 4px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.buttonOfertas {
+  cursor: pointer;
+  background-color: blue; }
+
+.visitadosOfertas {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase; }
+
+.lugaresOfertas {
+  margin-bottom: 12px;
+  padding-left: 37%;
+  background-image: url(../assets/Imagenes/fondoOfertas.jpg); }
+
+.OfertasDestinos {
+  margin: 20px; }
+
+.ofertas {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.animacionOfertas {
+  animation-name: ofertas;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+@keyframes ofertas {
+  0% {
+    font-size: 25px;
+    margin: auto; }
+  25% {
+    font-size: 30px;
+    solid: 2px solid black; }
+  50% {
+    font-size: 25px;
+    margin: auto; }
+  100% {
+    font-size: 30px;
+    solid: 2px solid black; } }
+
+/* Destinos */
+.destinosFondos {
+  background: #5255CE;
+  background: -moz-radial-gradient(center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+  background: -webkit-radial-gradient(center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+  box-shadow: radial-gradient(ellipse at center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+  padding-top: 20px; }
+
+.button, .button-cuyo, .button-mesopotamia, .button-norte, .button-sur {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: blue; }
+
+.button-cuyo {
+  background-color: gray; }
+
+.button-mesopotamia {
+  background-color: green; }
+
+.button-norte {
+  background-color: brown; }
+
+.button-sur {
+  background-color: lightblue; }
+
+.titulosDestinosSeccion {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.animacionDestinos {
+  animation-name: destinos;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 4s; }
+
+@keyframes destinos {
+  0% {
+    font-size: 10px;
+    width: 60%; }
+  25% {
+    font-size: 15px;
+    width: 60%; }
+  50% {
+    font-size: 20px;
+    width: 60%; }
+  75% {
+    font-size: 25px;
+    width: 60%; }
+  100% {
+    font-size: 30px;
+    width: 60%; } }
+
+/* Construcción */
+.grid-container {
+  display: grid;
+  grid-template-areas: "logo nav nav" "icono tituloConstruccion tituloConstruccion" "texto texto texto" "footer footer footer";
+  grid-template-rows: repeat(3, 33%);
+  grid-template-columns: auto; }
+  .grid-container .logo {
+    grid: logo; }
+  .grid-container .nav {
+    grid-area: nav; }
+  .grid-container .icono {
+    grid-area: icono; }
+  .grid-container .tituloConstruccion {
+    grid-area: tituloConstruccion; }
+  .grid-container .texto {
+    grid-area: texto; }
+  .grid-container .footer {
+    grid-area: footer; }
+
+.contenido {
+  display: flex; }
+
+.icono {
+  margin-left: 5%; }
+
+#construccionTitulo {
+  text-align: center;
+  font-size: 35px; }
+
+.texto {
+  text-align: center; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* Index */
+  .lista {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+  .img-logo {
+    width: 100%; }
+  .barraBusqueda {
+    display: inline;
+    border-radius: 4rem;
+    margin-top: 5px; }
+  .buttonBusqueda {
+    margin: 2px;
+    width: 30%; }
+  .inputBuscar {
+    width: 40%; }
+  .facebook {
+    margin: 2px; }
+  .mainIndex {
+    margin: 5px; }
+  .tituloIndex {
+    font-size: 15px; }
+  .subtituloIndex {
+    font-size: 10px; }
+  .visitados {
+    margin: 5px;
+    font-size: 15px; }
+  .calafateCard {
+    margin-left: 0vh; }
+  .calafate {
+    margin-bottom: 10px; }
+  .cataratas {
+    margin-bottom: 10px;
+    margin-left: 18px; }
+  .sanRafaelCard {
+    padding-left: 5%; }
+  .footer {
+    display: grid;
+    grid-template-areas: "copyright contactanos redesSociales" ". contactos .";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .copyright {
+    grid-area: copyright;
+    font-size: 15px; }
+  .contactanos {
+    grid-area: contactanos;
+    font-size: 15px; }
+  .redesSociales {
+    grid-area: redesSociales;
+    font-size: 15px; }
+  .contactos {
+    grid-area: contactos;
+    margin-top: 20px; }
+  /* Contacto */
+  .img-contacto {
+    display: none; }
+  .formulario {
+    width: 100%; }
+  /* Ofertas */
+  .ofertasForm {
+    width: 60%;
+    background-image: linear-gradient(to top, #00f7ff, #5479df); }
+  .lugaresOfertas {
+    padding-left: 1px; }
+  .formOfertas {
+    margin: auto; }
+  .ofertas {
+    margin: 10px auto 10px auto; } }
+
+/* Construccion */
+.headerConstruccion {
+  font-size: 15px; }
+
+.titulo {
+  font-size: 20px; }
+
+.redesConstruccion {
+  padding: 0px; }
+
+.redesSociales {
+  padding-left: 18%; }
+
+.icono {
+  width: 10%;
+  height: 10%; }
+
+#construccionTitulo {
+  font-size: 20px; }
