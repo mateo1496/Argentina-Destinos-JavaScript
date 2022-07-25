@@ -1,0 +1,121 @@
+@import "medidas";
+
+@media only screen and (min-width:0px) and (max-width:768px){
+    /* Index */
+    .lista{
+        display: block;
+        margin-right: $mRight;
+        margin-bottom: $mBottom;
+    }
+    .img-logo{
+        width: 100%;
+    }
+    .barraBusqueda{
+        display: inline;
+        border-radius: 4rem;
+        margin-top: 5px;
+    }
+    .buttonBusqueda{
+        margin: 2px;
+        width: 30%;
+    }
+    .inputBuscar{
+        width: 40%;
+    }
+    .facebook{
+        margin: 2px;
+    }
+    .mainIndex{
+        margin: 5px;
+    }
+    .tituloIndex{
+        font-size: 15px;
+    }
+    .subtituloIndex{
+        font-size: 10px;
+    }
+    .visitados{
+        margin: 5px;
+        font-size: 15px;
+    }
+    .calafateCard{
+        margin-left: 0vh;
+    }
+    .calafate{
+        margin-bottom: $mBottom;
+    }
+    .cataratas{
+        margin-bottom: $mBottom;
+        margin-left: 18px;
+    }
+    .sanRafaelCard{
+        padding-left: 5%;
+    }
+    .footer{
+        display: grid;
+        grid-template-areas: "copyright contactanos redesSociales"
+                             ". contactos .";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        margin-top: $mTop;
+        margin-left: $mRight;
+        margin-right: $mRight;      
+    }
+    .copyright{
+        grid-area: copyright;
+        font-size: 15px;
+    }
+    .contactanos{
+        grid-area: contactanos;
+        font-size: 15px;
+    }
+    .redesSociales{
+        grid-area: redesSociales;
+        font-size: 15px;
+    }
+    .contactos{
+        grid-area: contactos;
+        margin-top: 20px;
+    }
+    /* Contacto */
+    .img-contacto{
+        display: none;
+    }
+    .formulario{
+        width: 100%;
+    }
+    /* Ofertas */
+    .ofertasForm{
+     width: 60%;
+     background-image: linear-gradient(to top, rgb(0, 247, 255), rgb(84, 121, 223));
+    }
+    .lugaresOfertas{
+        padding-left: 1px;
+    }
+    .formOfertas{
+        margin: auto;
+    }
+    .ofertas{
+        margin: 10px auto 10px auto;
+    }
+}       
+
+/* Construccion */
+.headerConstruccion{
+   font-size: 15px;
+}
+.titulo{
+    font-size: 20px;
+}
+.redesConstruccion{
+    padding: 0px;
+}
+.redesSociales{
+    padding-left: 18%;
+}
+.icono{
+    width: 10%;
+    height: 10%;
+}
+#construccionTitulo{
+    font-size: 20px;
+}

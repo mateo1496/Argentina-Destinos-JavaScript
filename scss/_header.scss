@@ -1,0 +1,341 @@
+@import "colores";
+@import "medidas";
+$oscuro: rgba(16, 44, 128, 0.678);
+$negro: black;
+$claro: lightblue;
+
+/* Index */
+body{
+    background: linear-gradient(#33DFFA, #33B4DB, #4196F0, #3B65FF, #4636FF);
+    box-sizing: border-box;
+}
+.header{
+    background-color: $oscuro;
+    margin-top: $mTop;
+    margin-bottom: $mBottom+10;
+    padding-left: $pLeft;
+    .nav-link{
+        font-family: 'Federo', sans-serif;
+        font-family: 'Girassol', cursive;
+        color: $negro;
+        margin-top: $mTop;
+        font-size: 20px;
+    &:hover{
+        background-color: $claro;
+        cursor: pointer;
+        }     
+    }
+    .lista{
+        margin-top: 10%;
+    }   
+}
+.tituloIndex{
+    font-size: $fSize+10;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+}    
+.visitados{
+        font-family: 'Girassol', cursive;
+        font-size: 40px;
+        padding: $padding;
+        margin: auto;
+    }
+
+.barraBusqueda{
+    margin-top: $mTop;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 40px;
+    margin: 10px;
+    font-family: 'Girassol', cursive;
+    padding-left: 10%;
+    .facebook{
+        padding-left: 2px;
+    }
+    .instagram{
+        padding-left: 2px;
+    }
+    .buttonBusqueda &:hover{
+        cursor: pointer;
+        background-color: $azulClaro;
+    }
+}
+    /*.mainIndex{
+        background-image: url(../assets/Imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: padding 50px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }*/
+.destinos{
+    cursor: pointer;
+}
+.calafateCard{
+    padding-left: 6%;
+}
+.cataratas{
+    margin: auto;
+}
+.cataratasCard{
+    padding-left: 1px;
+}
+.sanRafael{
+    padding-left: 6%;
+}
+
+$footer: (
+   bColor: $colorFooter,
+   fSize: 15px,
+   fWeight: bold,
+   fFamily: 'Girassol' cursive,
+   color: $blanco,
+   jContent: space-evenly,
+   top: 15px,
+   centrar: center,
+   borde: 2px solid $negro
+);
+
+.footer{
+    background-color: map-get($footer, bColor);
+    font-size: map-get($footer, fSize);
+    font-weight: map-get($footer, fWeight);
+    font-family: map-get($footer, fFamily);
+    color: map-get($footer, color);
+    justify-content: map-get($footer, jContent);
+    margin-top: map-get($footer, top);
+    text-align: map-get($footer, centrar);
+    border: map-get($footer, borde);
+}
+.contactanos{
+    padding-left: 5%;
+}
+.redesSociales{
+  padding-right: 6%;
+}
+
+/* Contacto */
+.contactoTexto{
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+} 
+.formulario{
+  margin: auto;
+  background-image: radial-gradient(circle at 95.45% -4.17%, #dbb2ff 0, #b99df2 50%, #9988d1 100%);
+  width: 40%;
+  align-items: center;
+  text-align: center;
+} 
+.elementosFormulario{
+    width: 50%;
+    margin: auto;
+}
+.bottonContacto{
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: black;
+     .bottonContacto:hover{
+    background-color: blue;
+     }
+}
+
+/* Recomendaciones */
+.textoRecomendaciones{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.navRecomendaciones{
+    width: 40%;
+    padding: 5px;
+    color: $negro; 
+    margin: auto;
+    font-size: 20px;
+}
+/* Ofertas */
+h1{
+    font-size: $fSize;
+    box-shadow: $azulClaro;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+    margin: auto;
+}
+p{
+    font-size: 20px;
+}
+.textoOfertas{
+    font-size: $fSize;
+    font-weight: bold;
+    margin-top: mTop;
+}
+.formularioOfertas{
+    margin: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.buttonOfertas{
+    cursor: pointer;
+    background-color: blue;
+}
+.visitadosOfertas{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.lugaresOfertas{
+    margin-bottom: 12px;
+    padding-left: 37%;
+    background-image: url(../assets/Imagenes/fondoOfertas.jpg);
+}
+.OfertasDestinos{
+    margin: 20px;
+}
+.ofertas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.animacionOfertas{
+    animation-name: ofertas;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@keyframes ofertas{
+    0%{
+        font-size: 25px;
+        margin: auto
+    }
+    25%{
+        font-size: 30px;
+        solid: 2px solid black;
+    }
+    50%{
+        font-size: 25px;
+        margin: auto
+    }
+    100%{
+        font-size: 30px;
+        solid: 2px solid black;
+    }
+}
+
+#cantidad{
+    margin-bottom: 20px;
+}
+
+/* Destinos */
+.destinosFondos{
+    background: #5255CE;
+    background: -moz-radial-gradient(center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+    background: -webkit-radial-gradient(center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+    box-shadow: radial-gradient(ellipse at center, #5255CE 0%, #1C6EA4 52%, #250D10 100%);
+    padding-top: 20px;
+}
+.button{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: blue;
+}
+.button-cuyo{
+    @extend .button;
+    background-color: gray;
+}
+.button-mesopotamia{
+    @extend .button;
+    background-color: green;
+}
+.button-norte{
+    @extend .button;
+    background-color: brown;
+}
+.button-sur{
+    @extend .button;
+    background-color: lightblue;
+}
+
+@mixin titulosDestinosSeccion($font-size, $margin-bottom, $font-weight){
+    font-size: $font-size;
+    margin-bottom: $margin-bottom;
+    font-weight: $font-weight;
+}
+
+.titulosDestinosSeccion{
+    @include titulosDestinosSeccion(30px,20px,bold);
+}
+.animacionDestinos{
+    animation-name: destinos;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+@keyframes destinos{
+    0%{
+        font-size: 10px;
+        width: 60%;
+    }
+    25%{
+        font-size: 15px;
+        width: 60%;
+    }
+    50%{
+        font-size: 20px;
+        width: 60%;
+    }
+    75%{
+        font-size: 25px;
+        width: 60%;
+    }
+    100%{
+        font-size: 30px;
+        width: 60%;
+    }
+}
+
+/* Construcción */
+.grid-container{
+    display: grid;
+    grid-template-areas: "logo nav nav"
+                         "icono tituloConstruccion tituloConstruccion"
+                         "texto texto texto"
+                         "footer footer footer";
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: auto;
+    .logo{
+        grid: logo;
+    }              
+    .nav{
+        grid-area: nav;
+    }    
+    .icono{
+        grid-area: icono;
+    }   
+    .tituloConstruccion{
+        grid-area: tituloConstruccion;
+    }
+    .texto{
+        grid-area: texto;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}
+.contenido{
+    display: flex;
+}
+.icono{
+    margin-left: 5%;
+}
+#construccionTitulo{
+   text-align: center;
+   font-size: 35px;
+}
+.texto{
+    text-align: center;
+}
