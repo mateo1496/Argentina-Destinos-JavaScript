@@ -1,0 +1,25 @@
+{
+  "name": "argentina-turismo-bertello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateo1496/Argentina-Turismo-Bertello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateo1496/Argentina-Turismo-Bertello/issues"
+  },
+  "homepage": "https://github.com/mateo1496/Argentina-Turismo-Bertello#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
